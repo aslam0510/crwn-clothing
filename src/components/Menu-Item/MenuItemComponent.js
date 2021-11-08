@@ -5,9 +5,6 @@ import { withRouter } from 'react-router-dom';
  function MenuItemComponent({ title, imageUrl, size,history,match,linkUrl}) {
   
   const onCardClick = () =>{
-    console.log(match);
-    console.log(history);
-    console.log('clicked');
     history.push(`${match.url}${linkUrl}`)
   }
 
